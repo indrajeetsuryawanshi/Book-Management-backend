@@ -20,7 +20,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.use('/api', bookRoutes);
-app.get( (req, res) => {
+app.get( '/',(req, res) => {
   res.send('Hello from the API!');
 });
 
